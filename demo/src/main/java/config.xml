@@ -12,9 +12,5 @@
         http://www.springframework.org/schema/context/spring-context.xsd">
 
     <!-- Define your beans here -->
-    <bean class = "com.springcore.Student" name = "student1">
-        <property name="studentId" value="123456"/>
-        <property name="studentName" value="Anurag Singh"/>
-        <property name="studentAddress" value="virar, Mumbai"/>
-    </bean>
+    <bean class = "com.springcore.Student" name = "student1" p:studentId = "123456" p:studentName = "Anurag Singh" p:studentAddress = "virar, Mumbai"/>
 </beans>
