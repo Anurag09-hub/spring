@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/p
+        http://www.springframework.org/schema/p/spring-p.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- Define your beans here -->
+    <bean class = "com.springcore.collections.Empy" name = "employee">
+        <property name = "name" value = "Anurag Singh"/>
+
+        <property name = "phones">
+            <list>
+                <value>7208538770</value>
+                <value>8856924130</value>
+            </list>
+        </property>
+        <property name = "courses">
+            <map>
+                <entry key = "Java" value = "Core Java"/>
+                <entry key = "Spring" value = "Spring Framework"/>
+                <entry key = "Hibernate" value = "Hibernate ORM"/>
+            </map>
+        </property>
+        <property name = "addresses">
+            <set>
+                <value>Virar, Mumbai</value>
+                <value>Thane, Mumbai</value>
+                <value>Andheri, Mumbai</value>
+            </set>
+        </property>
+        <property name = "props">
+            <props>
+                <prop key = "project1">Spring Boot</prop>
+                <prop key = "project2">Microservices</prop>
+            </props>
+        </property>
+    </bean>
+</beans>
